@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
+type User = {
+    id: number;
+    email: string;
+};
+
 type Job = {
     id: number;
     title: string;
@@ -8,6 +13,7 @@ type Job = {
     location: string;
     jobType: string;
     description: string;
+    user: User;
 };
 
 export default function Admin() {

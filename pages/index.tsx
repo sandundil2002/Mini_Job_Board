@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
+type User = {
+    id: number;
+    email: string;
+};
+
 type Job = {
     id: number;
     title: string;
@@ -9,6 +14,7 @@ type Job = {
     jobType: string;
     description: string;
     createdAt: string;
+    user: User; 
 };
 
 export default function Home() {
