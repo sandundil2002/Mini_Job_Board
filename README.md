@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[View\_web\_site]([Mini_Job_Board_Application](https://mini-job-board-five.vercel.app/))
+[https://mini-job-board-five.vercel.app/](https://mini-job-board-five.vercel.app/)
   
   
 <h2>🧐 Features</h2>
