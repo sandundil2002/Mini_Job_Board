@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center" id="title">Mini Job Board</h1>
 
-## Getting Started
+<p align="center"><img src="public/img.png" alt="project-image"></p>
 
-First, run the development server:
+<p id="description">A simple job board web application built with Next.js PostgreSQL Prisma and TailwindCSS. that connects talented professionals with employment opportunities.</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<h2>🚀 Demo</h2>
+
+[Mini\_Job\_Board\_Application](Mini_Job_Board_Application)
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Public Job Listings Page: Displays all job posts with details (title company location job type description) fetched from a PostgreSQL database.
+*   Authentication: Implements email/password authentication using JWT (JSON Web Tokens).
+*   Filter jobs by type (Full-time Part-time Contract Remote)
+*   Job listing cards with company location job type and posting date
+*   Job search functionality
+*   Admin Dashboard: Allows logged-in users to add and delete job postings.
+*   Responsive design for all device sizes
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone the Repository:</p>
+
+```
+git clone https://github.com/sandundil2002/Mini_Job_Board.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>2. Install Dependencies:</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<p>3. Create a PostgreSQL database named jobboard &amp; implement the .env file with your database URL and JWT secret:</p>
 
-## Learn More
+```
+DATABASE_URL="postgresql://username:password@localhost:5432/jobboard?schema=public"
+JWT_SECRET=your-secret-key
+```
 
-To learn more about Next.js, take a look at the following resources:
+<p>4. Run Prisma Migrations: </p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npx prisma db push
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<p>5. Generate Prisma Client:</p>
 
-## Deploy on Vercel
+```
+npx prisma generate
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p>6. Start the Development Server:</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+npm run dev
+```
+
+<p>7. The app will be available at:</p>
+
+```
+http://localhost:3000
+```
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Next.js: React framework for server-side rendering and API routes.
+*   PostgreSQL: Database for storing users and jobs.
+*   Prisma: ORM for database interactions.
+*   TailwindCSS: Utility-first CSS framework for styling.
+*   JWT: Used for authentication.
+*   TypeScript: For type safety and better development experience.
